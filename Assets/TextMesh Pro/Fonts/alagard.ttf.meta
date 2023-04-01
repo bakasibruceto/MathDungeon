@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 59c7f0effb7b1ab4e99f6970bd613a7a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Alagard
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 331e7b9042a17814eaa27b466edb0ee3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
