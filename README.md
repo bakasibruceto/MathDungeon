@@ -11,4 +11,16 @@ Continuation of the previous project using Unity Game Engine
   - Button Inputs
   - Random Generated Equation
   - Maximun User input (3)
+  
+ (04/03/2023)
+ - Organize Script
+ - Addition of KeyPad Script
+  - Button Inputs
+ -GamePlay Scirpt (UPDATED)
+  - Random Generated Equatuon
+  - Maximun User input (3)
+  
+(04/05/2023)
+- Player Hp Bar
+- Health Bar Script
  
