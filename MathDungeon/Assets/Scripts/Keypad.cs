@@ -12,9 +12,9 @@ public class Keypad : MonoBehaviour
 
     public void ButtonEnter(){
         if (gp.ans == int.Parse(gp.usernum)){
-            gp.mobval -= gp.ans;
+            //gp.mobval -= gp.ans;
         } else {
-            gp.plyval -= gp.ans;
+            gp.TakeDamage();
         }
         ButtonRefresh();
         
@@ -23,7 +23,6 @@ public class Keypad : MonoBehaviour
     public void ButtonRefresh(){
         ButtonClear();
         gp.randomizer();
-        gp.Start();
         
     }
     public void ButtonClear(){

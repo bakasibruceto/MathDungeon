@@ -5,28 +5,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class GamePlay : MonoBehaviour
 {   
-    public Keypad key;
     public string num, usernum, tempnum;
     public string[] ops = {"+","x"};   
-    public Text UserInput,num1,num2,op, playerValue, monsterValue;
+    public Text UserInput, num1 ,num2, op, playerValue, monsterValue;
     
-    public int oprand, rand1, rand2, rum1, rum2, ans, plyval = 100, mobval = 100;
+    public int oprand, rand1, rand2, rum1, rum2, ans;
+    public int maxHealth = 100;
+    public int currentHealth;
 
-    private HealthBarScript hp;
-
+    public HealthBarScript healthBar;
+    public void Start() {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+        playerValue.text = currentHealth.ToString();
+        //monsterValue.text = mobval.ToString();
+        randomizer();
+    }
     public void randomizer(){
         rand1 = Random.Range(1,11);
         oprand = Random.Range(0,2);
         rand2 = Random.Range(1,11);
-    }
-
-    public void Start() {
-        randomizer();
-        playerValue.text = plyval.ToString();
-        monsterValue.text = mobval.ToString();
         rum1 = rand1;
         rum2 = rand2;
         num1.text = rum1.ToString();
@@ -42,8 +42,12 @@ public class GamePlay : MonoBehaviour
                 break;  
         }
     }
-    
-    
+
+    public void TakeDamage(){
+        currentHealth -= ans;
+        healthBar.setHealth(currentHealth);
+        playerValue.text = currentHealth.ToString();
+    }
     
     public void Update()
     {   
@@ -51,6 +55,7 @@ public class GamePlay : MonoBehaviour
             tempnum = num;  
             usernum = num;
         } 
+   
     }
 
 
