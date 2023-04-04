@@ -13,7 +13,8 @@ public class Keypad : MonoBehaviour
     public void ButtonEnter(){
         if (gp.ans == int.Parse(gp.usernum)){
             //gp.mobval -= gp.ans;
-        } else {
+        } 
+        else{
             gp.TakeDamage();
         }
         ButtonRefresh();
