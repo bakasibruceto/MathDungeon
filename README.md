@@ -19,7 +19,7 @@ Continuation of the previous project using Unity Game Engine
 - GamePlay Scirpt (UPDATED)
   - Random Generated Equatuon
   - Maximun User input (3)
-  - 
+  
   
 (04/05/2023)
 - Player Hp Bar
