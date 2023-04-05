@@ -22,6 +22,13 @@ Continuation of the previous project using Unity Game Engine
   
   
 (04/05/2023)
-- Player Hp Bar
+- GameOverState Scene
 - Health Bar Script
+- Player Hp Bar
+  - GameOverState - When it reaches to 0
+- Monster Hp Bar
+  - Resets Hp Bar and Increased by 100
+
+
+
  
