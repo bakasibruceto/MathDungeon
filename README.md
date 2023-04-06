@@ -36,8 +36,9 @@ Continuation of the previous project using Unity Game Engine
 
  (04/07/2023)
 - ViewportHandler Script
-- CaneraAnchor Script
-
+- CameraAnchor Script
+- SoundEffecPlayer Script
+- ObjectShake script
  
 
 
