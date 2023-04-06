@@ -8,8 +8,8 @@ public class Shake : MonoBehaviour
 {
     private UnityEngine.Vector3 originPosition;
 	private UnityEngine.Quaternion originRotation;
-	public float shake_decay = 0.002f;
-	public float shake_intensity = .10f;
+	public float shake_decay = 0.0002f;
+	public float shake_intensity = .3f;
 
 	private float temp_shake_intensity = 0;
 	
