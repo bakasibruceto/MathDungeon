@@ -33,6 +33,11 @@ Continuation of the previous project using Unity Game Engine
  (04/06/2023)
 - ChangeSprite Script
   - Mushroom Sprite Attack Animation
+
+ (04/07/2023)
+- ViewportHandler Script
+- CaneraAnchor Script
+
  
 
 
