@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using System.Threading;
 using System.Globalization;
 using System.Collections;
@@ -7,6 +8,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GamePlay : MonoBehaviour
 {   
+    public ChangeSprite cs;
     public HealthBarScript healthBar;
     public Text UserInput, num1 ,num2, operation, playerValue, monsterValue;
     public string[] operators = {"+","x"};
@@ -51,8 +53,18 @@ public class GamePlay : MonoBehaviour
         } else {
             healthBar.setPlayerHealth(currentPlayerHealth);
             playerValue.text = currentPlayerHealth.ToString();
+            Wait(1);
         }
     }
+
+    public async void Wait(int duration)
+    {
+        cs.MonsterAtk();
+        await Task.Delay(duration*1000);   
+        cs.Monsteridle();
+    }
+
+
     public void MonsterTakeDamage()
     {
         currentMonsterHealth -= ans; 
@@ -63,6 +75,7 @@ public class GamePlay : MonoBehaviour
             healthBar.setMonsterHealth(maxMonsterHealth);
         }
         //Class from HealthBarScript Monster Health
+      
         healthBar.setMonsterHealth(currentMonsterHealth);
         monsterValue.text = currentMonsterHealth.ToString();
     }
@@ -72,6 +85,6 @@ public class GamePlay : MonoBehaviour
             tempnum = num;  
             usernum = num;
         } 
-   
+      
     }
 }

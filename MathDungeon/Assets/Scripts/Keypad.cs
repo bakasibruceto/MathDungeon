@@ -5,6 +5,7 @@ using UnityEngine;
 public class Keypad : MonoBehaviour
 {
     public GamePlay gp;
+    public ChangeSprite cs;
     public void Update(){
         gp.UserInput.text = gp.usernum;
     }
