@@ -64,6 +64,7 @@ public class GamePlay : MonoBehaviour
     public async void Wait(float duration)
     {
         cs.MonsterAtk();
+        shake.Shake1();
         await Task.Delay((int)duration*500);   
         cs.Monsteridle();
     }
