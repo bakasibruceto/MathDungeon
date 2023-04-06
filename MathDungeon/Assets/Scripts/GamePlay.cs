@@ -8,6 +8,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GamePlay : MonoBehaviour
 {   
+    public Shake shake;
     public SoundEffectPlayer sfx;
     public ChangeSprite cs;
     public HealthBarScript healthBar;
@@ -81,6 +82,8 @@ public class GamePlay : MonoBehaviour
       
         healthBar.setMonsterHealth(currentMonsterHealth);
         monsterValue.text = currentMonsterHealth.ToString();
+        cs.Monsteridle();
+        shake.Shake1();
         sfx.DamageInflictSfx();
     }
     public void Update()
