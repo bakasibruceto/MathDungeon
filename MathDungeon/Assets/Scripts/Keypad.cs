@@ -5,11 +5,9 @@ using UnityEngine;
 public class Keypad : MonoBehaviour
 {
     public GamePlay gp;
-
     public void Update(){
         gp.UserInput.text = gp.usernum;
     }
-
     public void ButtonEnter(){
         if (gp.ans == int.Parse(gp.usernum)){
             gp.MonsterTakeDamage();
@@ -18,13 +16,10 @@ public class Keypad : MonoBehaviour
             gp.TakeDamage();
         }
         ButtonRefresh();
-        
     }
-
     public void ButtonRefresh(){
         ButtonClear();
-        gp.randomizer();
-        
+        gp.randomizer(); 
     }
     public void ButtonClear(){
         gp.num = "";
@@ -62,7 +57,6 @@ public class Keypad : MonoBehaviour
         gp.num = gp.tempnum+"0";
     }
 
-  
 }
 
 
