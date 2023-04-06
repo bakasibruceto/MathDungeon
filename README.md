@@ -28,6 +28,12 @@ Continuation of the previous project using Unity Game Engine
   - GameOverState - When it reaches to 0
 - Monster Hp Bar
   - Resets Hp Bar and Increased by 100
+  
+ 
+ (04/06/2023)
+- ChangeSprite Script
+  - Mushroom Sprite Attack Animation
+ 
 
 
 
