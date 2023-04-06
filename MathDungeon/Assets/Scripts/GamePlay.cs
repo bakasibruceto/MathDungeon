@@ -8,6 +8,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GamePlay : MonoBehaviour
 {   
+    public SoundEffectPlayer sfx;
     public ChangeSprite cs;
     public HealthBarScript healthBar;
     public Text UserInput, num1 ,num2, operation, playerValue, monsterValue;
@@ -54,13 +55,15 @@ public class GamePlay : MonoBehaviour
             healthBar.setPlayerHealth(currentPlayerHealth);
             playerValue.text = currentPlayerHealth.ToString();
             Wait(1);
+            sfx.DamageDealthSfx();
+
         }
     }
 
-    public async void Wait(int duration)
+    public async void Wait(float duration)
     {
         cs.MonsterAtk();
-        await Task.Delay(duration*1000);   
+        await Task.Delay((int)duration*500);   
         cs.Monsteridle();
     }
 
@@ -78,6 +81,7 @@ public class GamePlay : MonoBehaviour
       
         healthBar.setMonsterHealth(currentMonsterHealth);
         monsterValue.text = currentMonsterHealth.ToString();
+        sfx.DamageInflictSfx();
     }
     public void Update()
     {   
