@@ -4006,7 +4006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2412342303582860723, guid: bcdab635599ead84da799c173e04f65e, type: 3}
       propertyPath: m_MaskInteraction
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4221016613047002068, guid: bcdab635599ead84da799c173e04f65e, type: 3}
       propertyPath: m_LocalScale.x
