@@ -5,13 +5,17 @@ using UnityEngine;
 public class ChangeSprite : MonoBehaviour
 {
     public GamePlay gp;
-    public Sprite sp1, sp2;
+    public Sprite[] spriteArry;
+    public int sprite = 0;
+  
 
     public void MonsterAtk(){
-        GetComponent<SpriteRenderer>().sprite = sp2;
+        sprite =+ 1;
+        GetComponent<SpriteRenderer>().sprite = spriteArry[sprite];
+        sprite -= 1;
     }
 
     public void Monsteridle(){
-        GetComponent<SpriteRenderer>().sprite = sp1;
+        GetComponent<SpriteRenderer>().sprite = spriteArry[sprite];
     }
 }
