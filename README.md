@@ -40,7 +40,7 @@ Continuation of the previous project using Unity Game Engine
 - SoundEffecPlayer Script
 - ~ObjectShake script~
 
- (04/07/2023)
+ (04/09/2023)
 - Monster Animation Script
 
 
