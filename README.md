@@ -31,14 +31,20 @@ Continuation of the previous project using Unity Game Engine
   
  
  (04/06/2023)
-- ChangeSprite Script
-  - Mushroom Sprite Attack Animation
+- ~~ChangeSprite Script~~
+  - ~~Mushroom Sprite Attack Animation~~
 
  (04/07/2023)
 - ViewportHandler Script
 - CameraAnchor Script
 - SoundEffecPlayer Script
-- ObjectShake script
+- ~ObjectShake script~
+
+ (04/07/2023)
+- Monster Animation Script
+
+
+
  
 
 
