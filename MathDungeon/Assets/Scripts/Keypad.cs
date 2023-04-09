@@ -10,6 +10,7 @@ public class Keypad : MonoBehaviour
         gp.UserInput.text = gp.usernum;
     }
     public void ButtonEnter(){
+        gp.clicked = true;
         if (gp.ans == int.Parse(gp.usernum)){
             gp.MonsterTakeDamage();
         } 

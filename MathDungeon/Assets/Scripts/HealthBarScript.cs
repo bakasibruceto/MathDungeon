@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HealthBarScript : MonoBehaviour
 {
     public Slider PlayerSlider, MonsterSlider;
+    
     public void SetPlayerMaxHealth(int health)
     {
         PlayerSlider.maxValue = health;
